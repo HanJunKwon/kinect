@@ -1,0 +1,36 @@
+c:\users\god\documents\visual studio 2017\Projects\VirtualDressingRoom\VirtualDressingRoom\bin\Debug\VirtualDressingRoom.exe.config
+c:\users\god\documents\visual studio 2017\Projects\VirtualDressingRoom\VirtualDressingRoom\bin\Debug\VirtualDressingRoom.exe
+c:\users\god\documents\visual studio 2017\Projects\VirtualDressingRoom\VirtualDressingRoom\bin\Debug\VirtualDressingRoom.pdb
+c:\users\god\documents\visual studio 2017\Projects\VirtualDressingRoom\VirtualDressingRoom\bin\Debug\Microsoft.Kinect.dll
+c:\users\god\documents\visual studio 2017\Projects\VirtualDressingRoom\VirtualDressingRoom\bin\Debug\Microsoft.Kinect.xml
+c:\users\god\documents\visual studio 2017\Projects\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\VirtualDressingRoom.csprojResolveAssemblyReference.cache
+c:\users\god\documents\visual studio 2017\Projects\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\MainWindow.g.cs
+c:\users\god\documents\visual studio 2017\Projects\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\App.g.cs
+c:\users\god\documents\visual studio 2017\Projects\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\VirtualDressingRoom_MarkupCompile.cache
+c:\users\god\documents\visual studio 2017\Projects\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\VirtualDressingRoom_MarkupCompile.lref
+c:\users\god\documents\visual studio 2017\Projects\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\MainWindow.baml
+c:\users\god\documents\visual studio 2017\Projects\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\VirtualDressingRoom.g.resources
+c:\users\god\documents\visual studio 2017\Projects\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\VirtualDressingRoom.Properties.Resources.resources
+c:\users\god\documents\visual studio 2017\Projects\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\VirtualDressingRoom.csproj.GenerateResource.Cache
+c:\users\god\documents\visual studio 2017\Projects\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\VirtualDressingRoom.exe
+c:\users\god\documents\visual studio 2017\Projects\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\VirtualDressingRoom.pdb
+D:\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\MainWindow.g.cs
+D:\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\App.g.cs
+D:\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\VirtualDressingRoom_MarkupCompile.cache
+D:\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\VirtualDressingRoom_MarkupCompile.lref
+D:\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\VirtualDressingRoom.exe
+D:\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\VirtualDressingRoom.pdb
+D:\VirtualDressingRoom\VirtualDressingRoom\bin\Debug\VirtualDressingRoom.exe.config
+D:\VirtualDressingRoom\VirtualDressingRoom\bin\Debug\VirtualDressingRoom.exe
+D:\VirtualDressingRoom\VirtualDressingRoom\bin\Debug\VirtualDressingRoom.pdb
+D:\VirtualDressingRoom\VirtualDressingRoom\bin\Debug\Microsoft.Kinect.dll
+D:\VirtualDressingRoom\VirtualDressingRoom\bin\Debug\Microsoft.Kinect.Toolkit.BackgroundRemoval.dll
+D:\VirtualDressingRoom\VirtualDressingRoom\bin\Debug\Microsoft.Kinect.Toolkit.dll
+D:\VirtualDressingRoom\VirtualDressingRoom\bin\Debug\Microsoft.Kinect.xml
+D:\VirtualDressingRoom\VirtualDressingRoom\bin\Debug\Microsoft.Kinect.Toolkit.pdb
+D:\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\MainWindow.baml
+D:\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\VirtualDressingRoom.g.resources
+D:\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\VirtualDressingRoom.Properties.Resources.resources
+D:\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\VirtualDressingRoom.csproj.GenerateResource.Cache
+D:\VirtualDressingRoom\VirtualDressingRoom\obj\Debug\VirtualDressingRoom.csprojResolveAssemblyReference.cache

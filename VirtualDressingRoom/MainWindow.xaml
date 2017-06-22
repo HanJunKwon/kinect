@@ -1,0 +1,146 @@
+﻿<Window x:Class="VirtualDressingRoom.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VirtualDressingRoom"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="2098.826" Width="2050.565">
+    <Window.Resources>
+        <local:CategoryButtonViewModel x:Key="CategoryButtonViewModelKey"></local:CategoryButtonViewModel>
+        <local:ClothesButtonViewModel x:Key="ClothesButtonViewModelKey"></local:ClothesButtonViewModel>
+        <local:HairViewModel x:Key="HairViewModelKey"></local:HairViewModel>
+        <local:NecklaceViewModel x:Key="NecklaceViewModelKey"></local:NecklaceViewModel>
+        <local:TopViewModel x:Key="TopViewModelKey"></local:TopViewModel>
+        <local:BottomViewModel x:Key="BottomViewModelKey"></local:BottomViewModel>
+        <local:ShoesLeftViewModel x:Key="ShoesLeftViewModelKey"></local:ShoesLeftViewModel>
+        <local:ShoesRightViewModel x:Key="ShoesRightViewModelKey"></local:ShoesRightViewModel>
+    </Window.Resources>
+    <Grid>
+        <Canvas Name="canvas1">
+            <Image Name="Image1" HorizontalAlignment="Left" Height="2057" Stretch="Fill" Margin="0,0,0,0" VerticalAlignment="Top" Width="2024" Panel.ZIndex="-1"/>
+        </Canvas>
+        <Image Name="Image2" HorizontalAlignment="Left" Height="43" Stretch ="Fill" VerticalAlignment="Top" Width="2034" Source="D:/VirtualDressingRoom/VirtualDressingRoom/image/title.png" Opacity="0.5" Panel.ZIndex="0"/>
+        <Button x:Name="Buy" HorizontalAlignment="Left" Margin="344,0,0,0" VerticalAlignment="Top" Width="75" Height="40" Click="Buy_Click" OpacityMask="White">
+            <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                <Image Source="D:/VirtualDressingRoom/VirtualDressingRoom/image/img_buy.png" OpacityMask="White"></Image>
+            </StackPanel>
+        </Button>
+        <Button x:Name="Capture" HorizontalAlignment="Left" Margin="434,0,0,0" VerticalAlignment="Top" Width="75" Height="40" Click="Capture_Click" OpacityMask="White">
+            <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                <Image Source="D:/VirtualDressingRoom/VirtualDressingRoom/image/img_camera.png" OpacityMask="White"></Image>
+            </StackPanel>
+        </Button>
+
+        <!-- 카테고리 선택 버튼-->
+        <Button x:Name="Category_down" HorizontalAlignment="Left" Height="45" Margin="54,85,0,0" VerticalAlignment="Top" Width="150" Click="Category_down_Click">
+            <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                <Image Source="D:/VirtualDressingRoom/VirtualDressingRoom/image/img_up.jpg" OpacityMask="White"/>
+            </StackPanel>
+        </Button>
+        <Grid Name="category">
+            <Grid.DataContext>
+                <Binding Source="{StaticResource CategoryButtonViewModelKey}" />
+            </Grid.DataContext>
+            <Button x:Name="Category1" HorizontalAlignment="Left" Height="150" Margin="54,150,0,0" VerticalAlignment="Top" Width="150" Click="Category1_Click">
+                <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                    <Image Source="{Binding Path=Path1, Mode=TwoWay}" OpacityMask="White"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Category2" HorizontalAlignment="Left" Height="150" Margin="54,320,0,0" VerticalAlignment="Top" Width="150" Click="Category2_Click">
+                <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                    <Image Source="{Binding Path=Path2, Mode=TwoWay}" OpacityMask="White"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Category3" HorizontalAlignment="Left" Height="150" Margin="54,490,0,0" VerticalAlignment="Top" Width="150" Click="Category3_Click">
+                <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                    <Image Source="{Binding Path=Path3, Mode=TwoWay}" OpacityMask="White"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+        <Button x:Name="Category_up" HorizontalAlignment="Left" Height="45" Margin="54,660,0,0" VerticalAlignment="Top" Width="150" Click="Category_up_Click">
+            <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                <Image Source="D:/VirtualDressingRoom/VirtualDressingRoom/image/img_down.jpg" OpacityMask="White"/>
+            </StackPanel>
+        </Button>
+
+        <!-- 의상 선택 버튼-->
+        <Button x:Name="Clothes_down" HorizontalAlignment="Right" Height="45" Margin="0,55,54,0" VerticalAlignment="Top" Width="130" Click="Clothes_down_Click">
+            <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                <Image Source="D:/VirtualDressingRoom/VirtualDressingRoom/image/img_up.jpg" OpacityMask="White"/>
+            </StackPanel>
+        </Button>
+        <Grid Name="clothes">
+            <Grid.DataContext>
+                <Binding Source="{StaticResource ClothesButtonViewModelKey}"></Binding>
+            </Grid.DataContext>
+            <Button x:Name="Clothes1"  HorizontalAlignment="Right" Margin="0,120,54,0" VerticalAlignment="Top" Width="130" Height="130" Click="Clothes1_Click">
+                <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                    <Image Source="{Binding Path=Path1, Mode=TwoWay}" OpacityMask="White"></Image>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Clothes2"  HorizontalAlignment="Right" Margin="0,270,54,0" VerticalAlignment="Top" Width="130" Height="130" Click="Clothes2_Click">
+                <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                    <Image Source="{Binding Path=Path2, Mode=TwoWay}" OpacityMask="White"></Image>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Clothes3"  HorizontalAlignment="Right" Margin="0,420,54,0" VerticalAlignment="Top" Width="130" Height="130" Click="Clothes3_Click">
+                <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                    <Image Source="{Binding Path=Path3, Mode=TwoWay}" OpacityMask="White"></Image>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Clothes4"  HorizontalAlignment="Right" Margin="0,570,54,0" VerticalAlignment="Top" Width="130" Height="130" Click="Clothes4_Click">
+                <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                    <Image Source="{Binding Path=Path4, Mode=TwoWay}" OpacityMask="White"></Image>
+                </StackPanel>
+            </Button>
+        </Grid>
+        <Button x:Name="Clothes_up" HorizontalAlignment="Right" Height="45" Margin="0,720,54,0" VerticalAlignment="Top" Width="130" Click="Clothes_up_Click">
+            <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                <Image Source="D:/VirtualDressingRoom/VirtualDressingRoom/image/img_down.jpg" OpacityMask="White"/>
+            </StackPanel>
+        </Button>
+        <TextBlock Name="Z" HorizontalAlignment="Left" Margin="1023,90,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="55" Width="522" FontSize="25"/>
+
+        <!-- *** 선택한 의상 나오는 부분 *** -->
+        <!-- 헤어 -->
+        <Grid Name="Hair" HorizontalAlignment="Left" Height="200" Margin="740,680,0,0" VerticalAlignment="Top" Width="200">
+            <Grid.DataContext>
+                <Binding Source="{StaticResource HairViewModelKey}"></Binding>
+            </Grid.DataContext>
+            <Image Source="{Binding Path=Path, Mode=TwoWay}" HorizontalAlignment="Left" Height="200" Margin="0,0,0,0" VerticalAlignment="Top" Width="200"/>
+        </Grid>
+        <Grid Name="Necklace" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="600" Panel.ZIndex="3">
+            <Grid.DataContext>
+                <Binding Source="{StaticResource NecklaceViewModelKey}"></Binding>
+            </Grid.DataContext>
+            <Image Source="{Binding Path=Path, Mode=TwoWay}" HorizontalAlignment="Left" Height="200" Margin="0,0,0,0" VerticalAlignment="Top" Width="600"/>
+        </Grid>
+        <Grid Name="ClothesTop" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="650">
+            <Grid.DataContext>
+                <Binding Source="{StaticResource TopViewModelKey}"></Binding>
+            </Grid.DataContext>
+            <Image Name="ImgClothesTop" Source="{Binding Path=Path, Mode=TwoWay}" HorizontalAlignment="Left" Height="400" Margin="0,0,0,0" VerticalAlignment="Top" Width="650"/>
+        </Grid>
+        <Grid Name="ClothesBottom" HorizontalAlignment="Left" Height="700" Margin="877,80,0,0" VerticalAlignment="Top" Width="600">
+            <Grid.DataContext>
+                <Binding Source="{StaticResource BottomViewModelKey}"></Binding>
+            </Grid.DataContext>
+            <Image Name="ImgClothesBottom" Source="{Binding Path=Path, Mode=TwoWay}" HorizontalAlignment="Left" Height="700" Margin="0,0,0,0" VerticalAlignment="Top" Width="600"/>
+        </Grid>
+        <Grid Name="ShoesLeft" HorizontalAlignment="Left" Height="100" Margin="484,490,0,0" VerticalAlignment="Top" Width="100">
+            <Grid.DataContext>
+                <Binding Source="{StaticResource ShoesLeftViewModelKey}"></Binding>
+            </Grid.DataContext>
+            <Image Source="{Binding Path=Path, Mode=TwoWay}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" Height="100" Width="100"></Image>
+        </Grid>
+        <Grid Name="ShoesRight" HorizontalAlignment="Left" Height="100" Margin="319,605,0,0" VerticalAlignment="Top" Width="100">
+            <Grid.DataContext>
+                <Binding Source="{StaticResource ShoesRightViewModelKey}"></Binding>
+            </Grid.DataContext>
+            <Image Source="{Binding Path=Path, Mode=TwoWay}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" Height="100" Width="100"></Image>
+        </Grid>
+    </Grid>
+</Window>
+
+    
